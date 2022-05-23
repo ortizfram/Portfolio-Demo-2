@@ -7,6 +7,9 @@ Global settings
   padding: 0;
   outline: none;
 }
+/*----------------------
+menu settings
+-------------------------*/
  .container > *{
      padding: 20px;
      grid-gap: 10px;
