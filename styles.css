@@ -1,33 +1,30 @@
-*{
-  padding: 0;
-  margin: 0;
+/*borde box prop to all html
+-----------------------------*/
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
-
-body{
-background: #212121;
-font-family: 'poppins', sans-serif;
+/*-----------------------
+own color varibles
+-------------------------*/
+:root {
+  --clr-icons: #929292;
+  --clr-text: #fff;
+  --clr-bg-dark: #242424;
+  --cdlr-bg-light: #3b3b3b;
+  --clr-accent: #ff7600;
 }
 
-.menu{
-  padding: 0 10px 30px 10px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax
-(350px,1fr));
+body {
+  margin: 1em;
+  line-height: 1.5;
+  background-color: var(--clr-bg-dark);
+  color: var(--clr-text);
+  font-family: "Poppins", sans-serif;
 }
 
-.heading{
-  background-color: #cb202d;
-  color: #ffff; 
-  margin-bottom: 30px;
-  padding: 30px 0;
-  grid-column: 1/1-1;
-  text-align: center;
-}
-
-.heading h1{
-  font-weight: 700;
-  font-size: 30px;
-  letter-spacing: 10px;
-  margin-bottom: 10px ;
+img {
+  /*fix img in screen*/
+  max-width: 100%;
 }
