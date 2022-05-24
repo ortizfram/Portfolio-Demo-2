@@ -23,11 +23,7 @@ body {
   background-color: var(--clr-body);
   color: var(--clr-text);
   font-family: "Poppins", sans-serif;
-}
-
-img {
-  /*fix img in screen*/
-  max-width: 100%;
+  max-height: max-content;
 }
 
 .logo {
@@ -56,6 +52,13 @@ img {
   margin: 0;
   font-size: 2rem;
   margin-bottom: 1.5em;
+}
+
+
+.main-imgs {
+  max-width: 100%;
+  display: flex;
+  gap: 0.5em;
 }
 
 header {
