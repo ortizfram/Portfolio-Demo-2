@@ -18,7 +18,7 @@ own color varibles
 }
 
 body {
-  margin: 1em;
+  margin: 3em;
   line-height: 1.5;
   background-color: var(--clr-body);
   color: var(--clr-text);
@@ -30,17 +30,24 @@ img {
   max-width: 100%;
 }
 
-.logo{
+.logo {
+  font-size: clamp(2rem, 3.5vw, 4rem);
   color: var(--clr-accent);
   text-decoration: none;
+  cursor: pointer;
 }
 
-.name{
+.greetings {
+  margin: 0;
+  font-size: 1em;
+}
+
+.name {
   /*less space height*/
   line-height: 0.82;
   margin: 0;
   /*clamp= sets a min , time (breakpoint),& a max*/
-  font-size: clamp(3rem, 10vw, 8rem ) ;
+  font-size: clamp(6rem, 10vw, 8rem);
   color: var(--clr-accent);
 }
 
@@ -48,13 +55,13 @@ img {
   color: var(--clr-icons);
   margin: 0;
   font-size: 2rem;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 header {
   display: flex;
   align-items: center;
-  margin: 2em 0 ;
+  margin: 2em 0;
 }
 
 .nav {
