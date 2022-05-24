@@ -9,6 +9,7 @@
 own color varibles
 -------------------------*/
 :root {
+  --clr-body: #000000;
   --clr-icons: #929292;
   --clr-text: #fff;
   --clr-bg-dark: #242424;
@@ -19,7 +20,7 @@ own color varibles
 body {
   margin: 1em;
   line-height: 1.5;
-  background-color: var(--clr-bg-dark);
+  background-color: var(--clr-body);
   color: var(--clr-text);
   font-family: "Poppins", sans-serif;
 }
@@ -27,4 +28,44 @@ body {
 img {
   /*fix img in screen*/
   max-width: 100%;
+}
+
+.logo{
+  color: var(--clr-accent);
+  text-decoration: none;
+}
+
+.name{
+  /*less space height*/
+  line-height: 0.82;
+  margin: 0;
+  /*clamp= sets a min , time (breakpoint),& a max*/
+  font-size: clamp(3rem, 10vw, 8rem ) ;
+  color: var(--clr-accent);
+}
+
+.ocupation {
+  color: var(--clr-icons);
+  margin: 0;
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin: 2em 0 ;
+}
+
+.nav {
+  outline: 2px solid red;
+  /*fit area is same ad width 100%*/
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-link {
+  color: var(--clr-text);
+  text-decoration: none;
 }
