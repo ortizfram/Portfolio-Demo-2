@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="styles.css">
 
+    <script src="https://kit.fontawesome.com/98d1538458.js" crossorigin="anonymous"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,25 +20,31 @@
 
 
 <body>
-    <div class="main-grid">
-        <header>
-            <a href="#" class="logo" alt="ortiz">ORTIZ</a>
-            <nav class="nav">
-                <ul>
+    <div class="container">
+        <div class="sidebar">
+            <nav class="navbar">
+                <img src="img/logo.ico" class="logo">
+                <ul class="nav-links">
                     <a href="#" class="nav-link">Work</a>
                     <a href="#" class="nav-link">About Me</a>
                     <a href="#" class="nav-link">Technologies</a>
                     <a href="#" class="nav-link">Contact</a>
                 </ul>
+                <div class="menu-bar">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </nav>
-        </header>
+        </div>
+
 
         <main>
-            <p class="greetings">Hi there! i'm</p>
-            <h1 class="name">FRANCO ORTIZ</h1>
-            <h3 class="ocupation">frontend web developer</h3>
+            <div class="text-card">
+                <p class="greetings">Hi there! i'm</p>
+                <h1 class="name">FRANCO ORTIZ</h1>
+                <h3 class="ocupation">frontend web developer</h3>
+            </div>
             <!--div 4 2 images -->
-            <div class="main-imgs">
+            <div class="card">
                 <img src="https://i.gifer.com/NxfN.gif" alt="coding-donut" class="primary-img">
                 <img src="img/2.png" alt="franco" class="secondary-img">
             </div>
@@ -50,8 +58,9 @@
                 <a href="" class="social-link" aria-label=""><img src="" alt="" class="social-img"></a>
             </div>
         </footer>
-    </div>
 
+        <script src="index.js"></script>
+    </div>
 </body>
 
 </html>
