@@ -18,6 +18,20 @@ own color varibles
   --clr-bg-dark: #242424;
   --cdlr-bg-light: #3b3b3b;
   --clr-accent: #ff7600;
+  --clr-gradient: linear-gradient(to right,
+  rgba(249,107,142,1),
+  rgba(218,103,230,1),
+  rgba(130,125,253,1));
+  --clr-gradient2: linear-gradient(to left,
+  rgba(249,107,142,1),
+  rgba(218,103,230,1),
+  rgba(130,125,253,1));
+}
+/*-------------------------------
+font
+-------------------------------*/
+body {
+  font-family: 'Poppins', sans-serif;
 }
 /*-----------------------------
 grid
@@ -29,10 +43,7 @@ grid
   grid-area: sidebar;
   justify-content: center;
 
-  background: linear-gradient(to right,
-  rgba(249,107,142,1),
-  rgba(218,103,230,1),
-  rgba(130,125,253,1));
+  background: var(--clr-gradient);
 }
 .footer{
   grid-area: footer;
@@ -97,4 +108,43 @@ hero
 .avatar {
   border-radius: 40%;
   max-width: 400px ;
+  margin-bottom: 3%;
+}
+.hero h1 {
+  font-size: 3em;
+  font-weight: 500;
+  text-transform: lowercase;
+  color: var(--clr-bg-dark);
+}
+.hero p {
+  margin-top: 1em;
+}
+.hero h3 {
+  color: var(--clr-bg-dark);
+  line-height: 1;
+}
+.action-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+
+  padding: 0.5em 2em;
+  border-radius: 40px;
+  margin: 1em 0;
+
+  transition: 0.3s;
+  background: var(--clr-gradient2)
+}
+.action-btn:hover {
+  box-shadow: 0 10px 50px rgba(188, 197,216,1);
+}
+/*-------------------------------
+footer
+--------------------------------*/
+footer ul {
+  max-width: 640px;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: row;
 }
