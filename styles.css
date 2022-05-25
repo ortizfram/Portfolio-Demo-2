@@ -19,81 +19,82 @@ own color varibles
   --cdlr-bg-light: #3b3b3b;
   --clr-accent: #ff7600;
 }
-
-/*----------------------------*/
-body {
-  margin: 3em 3em;
-
-  background-color: var(--clr-body);
-  color: var(--clr-text);
-  font-family: "Poppins", sans-serif;
+/*-----------------------------
+grid
+-----------------------------*/
+.content{
+  grid-area: content;
 }
+.sidebar{
+  grid-area: sidebar;
+  justify-content: center;
 
+  background: linear-gradient(to right,
+  rgba(249,107,142,1),
+  rgba(218,103,230,1),
+  rgba(130,125,253,1));
+}
+.footer{
+  grid-area: footer;
+}
+/*-----------------------------
+container menu ACTIVATE GRID
+-------------------------------*/
+.container{
+  font-size: 1.5em;
+  width: 100%;
+  height: 100vh;
+
+  display: grid;
+  grid-template-areas: 
+  "sidebar"
+  "content"
+  "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 130px 800px 250px;
+}
+/*------------------------------
+set padding 1 em
+------------------------------*/
+.content,
+.sidebar,
+.footer {
+  padding: 1em;
+}
 /*---------------------------------------
 navbar
 ----------------------------------------*/
-header {
-  width: 100%;
-  height: 70px;
-  margin-bottom: 5%;
-}
-
-.navbar {
-  margin: 0 auto;
-  text-align: center;
-
-  display: flex;
-  
-  line-height: 70px;
-  width: 100%;
-
-  color: var(--clr-text);
-  text-decoration: none;
-}
-
-.nav-links {
-  display: inline-block;
-}
-
-.nav-link {
-  line-height: 70px;
-  font-weight: 500;
-
-  text-decoration: none;
-  color: var(--clr-icons);
-}
-
-.logo {
-  line-height: 70px;
-  width: 60px;
-  height: 60px;
-}
-
-.menu-bar {
-  margin-left: 1%;
-  height: 22px;
-  width: 20px;
-}
-
-/*----------------------------------------
-main
---------------------------------------------*/
-.main {
-  grid-template-columns: repeat(2, 1fr);
-
-  max-width: 1000px;
-  margin: 20px auto;
-  width: 90%;
-}
-
-.text-card {
-
-}
-
-/*----------------------------------------------
-main imgs
---------------------------------------------*/
-.card {
+nav ul {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+nav li {
+  list-style: none;
+  padding: 1em 0;
+}
+nav li a {
+  text-decoration: none;
+  color: var(--clr-text);
+  font-weight: 700;
+  opacity: 0.6;
+
+  transition: transform 0.3s; /*animation*/
+}
+nav li a:hover {
+  opacity: 1;
+}
+/*-----------------------------------
+hero 
+--------------------------------*/
+.hero {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.avatar {
+  border-radius: 40%;
+  max-width: 400px ;
 }
